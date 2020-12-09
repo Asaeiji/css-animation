@@ -1,0 +1,60 @@
+
+
+@charset "utf-8";
+
+.kkk{
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-group{
+    width: 0 auto;
+}
+
+.headtxt{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+}
+
+.aaa{
+    text-align: center;
+}
+
+.text{
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.list-group-item{
+    font-size: 19px;
+}
+
+.hhhh{
+    font-size: 10px;
+}
+
+
+
+.gggg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+}
+
+.card{
+    width:50%;
+}
+
+.pagination{
+    width: 0 0 0 30px;
+}
+
+.footertext{
+    text-align: right;
+    font-size: 10px;
+}
