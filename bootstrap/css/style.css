@@ -43,11 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 20px 0 20px;
+    margin: 20px 20px 0 20px;
 }
 
 .card{
     width:50%;
+    margin-top: 20px;
 }
 
 .pagination{
@@ -57,4 +58,20 @@
 .footertext{
     text-align: right;
     font-size: 10px;
+}
+
+.color-5{
+    background-color: #cd4636;
+}
+
+pre {
+  margin: 1em 0; /* ブロック前後の余白 */
+  padding: 1em; /* ブロック内の余白 */
+  border-radius: 5px; /* 角丸 */
+  background: #25292f; /* 背景色 */
+  color: #fff; /* 文字色 */
+  white-space: pre-wrap; /* はみ出たときに折り返す */
+  max-width: 350px;
+    overflow-x: auto; /* ⭐ */
+  -webkit-overflow-scrolling: touch; /* ⭐ */
 }

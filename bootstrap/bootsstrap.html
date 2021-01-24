@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/anime.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1>
+        <div class="alert alert-primary" role="alert">
+            <div class="kkk">
+                css アニメーション
+            </div>
+        </div>
+    </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">text-animation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">font-animation</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2>
+        <div class="hhhh">
+            <p class="headtxt">こちらでは様々なcssアニメーションを紹介します</p>
+        </div>
+
+        <div class="gggg">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <span id="box"></span>
+                    <ul class=".list-group-flush"></ul>
+                    <li class="list-group-item">横に伸び縮みします</li>
+                    <div class="text">
+                        <p>サンプルコードを紹介します。</p>
+                        <pre><code>#box{
+                        display:block;
+                        width:10px;
+                        height:100px;
+                        background:gold;
+                        animation:2s ease-in 1s infinite alternate forwards running expansion;
+                        }
+                        @keyframes expansion{
+                        0%{
+                        width:10px;
+                        }
+                        100%{
+                        width:300px;
+
+                        }
+                        }
+
+                        @keyframes fadeIn {
+                        from {
+                        opacity:0;
+                        }
+                        to {
+                        opacity:1;
+                        }
+                        }
+                          };</code></pre>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="aaa">
+                        <p class="card-text" style="height: 6rem;">images</p>
+                    </div>
+                    <ul class=".list-group-flush"></ul>
+                    <li class="list-group-item">文字がふわふわ浮きます</li>
+                    <div class="text">
+                        <p>サンプルコードを紹介します。</p>
+                        <pre><code>.aaa {
+                        -webkit-animation:fuwafuwa 3s infinite linear alternate;
+                        animation:fuwafuwa 3s infinite linear alternate;
+                        }
+
+                        @-webkit-keyframes fuwafuwa {
+                        0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+                        50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+                        100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+                        }
+
+                        @keyframes fuwafuwa {
+                        0% {transform:translate(0, 0) rotate(-5deg);}
+                        50% {transform:translate(0, -5px) rotate(0deg);}
+                        100% {transform:translate(0, 0)rotate(5deg);}
+                        }</code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Image cap">
+                    <title>Placeholder</title>
+                    <rect fill="#868e96" width="100%" height="100%" /><text class="aaa" fill=" #dee2e6" dy=".3em"
+                        x="25%" y="50%">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                </div>
+                <div class="text">
+                    <p>サンプルコードを紹介します。</p>
+                    <pre><code>#box{
+                                            display:block;
+                                            width:10px;
+                                            height:100px;
+                                            background:gold;
+                                            animation:2s ease-in 1s infinite alternate forwards running expansion;
+                                            }
+                                            @keyframes expansion{
+                                            0%{
+                                            width:10px;
+                                            }
+                                            100%{
+                                            width:300px;
+
+                                            }
+                                            }
+
+                                            @keyframes fadeIn {
+                                            from {
+                                            opacity:0;
+                                            }
+                                            to {
+                                            opacity:1;
+                                            }
+                                            }
+                                              };</code></pre>
+
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="kkc">
+                        <p class="card-text" style="height: 6rem;"></p>
+                    </div>
+                    <ul class=".list-group-flush"></ul>
+                    <li class="list-group-item">回転します</li>
+                    <div class="text">
+                        <p>サンプルコードを紹介します。</p>
+                        <pre><code>.kkc {
+                        width: 100px;
+                        height:100px;
+                        line-height: 100px;
+                        text-align: center;
+                        margin: 50px 0;
+                        border: 1px solid #BBB232;
+                        background-color: #F7ED91;
+                        color: #ECB94C;
+                        transition: 0.5s;
+                        }
+
+                        .kkc:hover {
+                        color: #E47609;
+                        transform: rotate(360deg);
+                        }</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <input type="checkbox" id="trigger">
+                    <label for="trigger">
+                        <div class="bbe"></div>
+                    </label>
+                    <p class="card-text" style="height: 6rem;"></p>
+                </div>
+                <ul class=".list-group-flush"></ul>
+                <li class="list-group-item">大きくなります</li>
+                <div class="text">
+                    <p>サンプルコードを紹介します。</p>
+                    <pre><code>.bbe {
+                    width: 30px;
+                    height: 30px;
+                    background: #EFCECF;
+                    border: 1px solid #C79A9B;
+                    margin-left: 0;
+                    transition: all 1s;
+                    }
+
+                    #trigger {
+                    display: none;
+                    }
+
+                    #trigger:checked ~ label .bbe {
+                    margin-left: 200px;
+                    width: 100px;
+                    height: 50px;
+                    background: #F17C7E;
+                    }</code></pre>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="ttr">
+                        <p class="card-text" style="height: 6rem;"></p>
+                    </div>
+                    <ul class=".list-group-flush"></ul>
+                    <li class="list-group-item">回転します</li>
+                    <div class="text">
+                        <p>サンプルコードを紹介します。</p>
+                        <pre><code>.ttr {
+                        width: 50px;
+                        height: 50px;
+                        background-color: #D8BFF8;
+                        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        }</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="text">
+            <p>サンプルコードを紹介します。</p>
+            <pre><code>#box{
+                                                    display:block;
+                                                    width:10px;
+                                                    height:100px;
+                                                    background:gold;
+                                                    animation:2s ease-in 1s infinite alternate forwards running expansion;
+                                                    }
+                                                    @keyframes expansion{
+                                                    0%{
+                                                    width:10px;
+                                                    }
+                                                    100%{
+                                                    width:300px;
+
+                                                    }
+                                                    }
+
+                                                    @keyframes fadeIn {
+                                                    from {
+                                                    opacity:0;
+                                                    }
+                                                    to {
+                                                    opacity:1;
+                                                    }
+                                                    }
+                                                      };</code></pre>
+
+
+        </div>
+
+        <!-- <h2 class="">o</h2>
+
+        <div class="kkc">point</div>
+
+        <input type="checkbox" id="trigger">
+        <label for="trigger">
+            <div class="bbe"></div>
+        </label>
+
+        <div class="ttr"></div>
+
+        <div class="anime_test"></div>
+
+        <ul class="mouse">
+            <li><a href="">メニューA</a></li>
+            <li><a href="">メニューB</a></li>
+            <li><a href="">メニューC</a></li>
+        </ul>
+        <div class="color-5">
+            <nav class="cl-effect-12" id="cl-effect-12">
+                <a href="#cl-effect-12">Chatoyant</a>
+                <a href="#cl-effect-12">Ineffable</a>
+                <a href="#cl-effect-12">Efficiency</a>
+                <a href="#cl-effect-12">Mellifluous</a>
+                <a href="#cl-effect-12">Serendipity</a>
+            </nav>
+        </div> -->
+
+        <!-- <div class="fade">ここがふわっとするよ</div>
+
+        <div class="rotating-text">
+            <p>CSS Animation is</p>
+            <p>
+                <span class="word alizarin">awesome.</span>
+                <span class="word wisteria">beautiful.</span>
+                <span class="word peter-river">creative.</span>
+                <span class="word emerald">fabulous.</span>
+                <span class="word sun-flower">interesting.</span>
+            </p> -->
+
+        <!-- <div class="container">
+                <p class="bound">
+                    <span>ONE NOTE</span>
+                </p>
+            </div>
+
+            <h1 class="Headline">記事タイトル</h1>-->
+
+
+        <footer>
+            <div class="alert alert-primary" role="alert">
+                <div class="footertext">
+                    copyright
+                </div>
+            </div>
+        </footer>
+
+        <script>$('.ttr').click(function () {
+                $(this).toggleClass('mix');
+            });</script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+
+</html>
