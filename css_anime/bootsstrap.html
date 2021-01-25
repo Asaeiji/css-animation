@@ -7,18 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/anime.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="top">
+            <div class="inner">
+                <h1>CAF</h1>
+                <p class="subtitle">cssアニメーションフレームワーク</p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="column">
+            <div class="column-test">
+                <aside class="is-medium menu">
+                    <p class="menu-label">作品説明</p>
+                    <ul class="menu-list">
+                        <li><a href="animation.html" class="link-box">概要</a></li>
+                    </ul>
+                    <p class="menu-label">COMPONENTS</p>
+                    <ul class="menu-list">
+                        <li><a class="link-box" href="bootsstrap.html">animation</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            </div>
+            <div class="content-box">
+                <div class="inner">
+                    <div class="content-1">
+                        <h2>COMPONENTS</h2>
+                        <div id="box"></div>
+
+                        <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                            data-user="yohei_inai" data-slug-hash="rNVVojQ"
+                            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                            data-pen-title="2020-02-11-sample03">
+                            <span>See the Pen <a href="https://codepen.io/yohei_inai/pen/rNVVojQ">
+                                    2020-02-11-sample03</a> by YOHEI INAI (<a
+                                    href="https://codepen.io/yohei_inai">@yohei_inai</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                        <p>このアニメーションは伸び縮みをループするアニメーションです。</p>
+                        <div class="text">
+                            <pre><code class="prettyprint lang-css">
+                                #box{
+                                display:block;
+                                width:10px;
+                                height:100px;
+                                background:gold;
+                                animation:2s ease-in 1s infinite alternate forwards running expansion;
+                                    }
+                                @keyframes expansion{
+                                0%{
+                                width:10px;
+                                     }
+                                100%{
+                                width:300px;
+
+                                 }
+                                  }
+
+                                @keyframes fadeIn {
+                                from {
+                                opacity:0;
+                                }
+                                to {
+                                 opacity:1;
+                                }
+                                }
+                                 };</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="contents-2">
+                        <h2>説明</h2>
+                        <p>このフレームワークはbootstrapのようなレイアウトの枠組みではなく主にアニメーションに関してのフレームワークを作りました。<br>
+                            アニメーションの数は正直まだまだ少ないです。</p>
+                    </div>
+
+                    <div class="contents-3">
+                        <h2>使い方</h2>
+                        <p>こちたの使い方は、<a href=""><span
+                                    class="text2">css/anime.css</span></a>を読み込んで頂いてコンポーネントを見ていただき好きなアニメーションを適用してください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="ftr">
+            <div class="inner">
+                <p class="subtitle">copyright</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script>$('.ttr').click(function () {
+        $(this).toggleClass('mix');
+    });</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+
+
+
+
+
+<!-- <body>
     <h1>
         <div class="alert alert-primary" role="alert">
             <div class="kkk">
@@ -268,41 +379,9 @@
                     <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
 
-        <div class="text">
-            <p>サンプルコードを紹介します。</p>
-            <pre><code>#box{
-                                                    display:block;
-                                                    width:10px;
-                                                    height:100px;
-                                                    background:gold;
-                                                    animation:2s ease-in 1s infinite alternate forwards running expansion;
-                                                    }
-                                                    @keyframes expansion{
-                                                    0%{
-                                                    width:10px;
-                                                    }
-                                                    100%{
-                                                    width:300px;
-
-                                                    }
-                                                    }
-
-                                                    @keyframes fadeIn {
-                                                    from {
-                                                    opacity:0;
-                                                    }
-                                                    to {
-                                                    opacity:1;
-                                                    }
-                                                    }
-                                                      };</code></pre>
-
-
-        </div>
-
-        <!-- <h2 class="">o</h2>
+<!-- <h2 class="">o</h2>
 
         <div class="kkc">point</div>
 
@@ -330,7 +409,7 @@
             </nav>
         </div> -->
 
-        <!-- <div class="fade">ここがふわっとするよ</div>
+<!-- <div class="fade">ここがふわっとするよ</div>
 
         <div class="rotating-text">
             <p>CSS Animation is</p>
@@ -342,7 +421,7 @@
                 <span class="word sun-flower">interesting.</span>
             </p> -->
 
-        <!-- <div class="container">
+<!-- <div class="container">
                 <p class="bound">
                     <span>ONE NOTE</span>
                 </p>
@@ -350,23 +429,5 @@
 
             <h1 class="Headline">記事タイトル</h1>-->
 
-
-        <footer>
-            <div class="alert alert-primary" role="alert">
-                <div class="footertext">
-                    copyright
-                </div>
-            </div>
-        </footer>
-
-        <script>$('.ttr').click(function () {
-                $(this).toggleClass('mix');
-            });</script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-
-
-</body>
 
 </html>
